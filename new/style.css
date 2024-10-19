@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #1e1e1e;
+    color: #fff;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: #6a0dad; /* Color morado para enlaces */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #fff; /* Cambia a blanco cuando el enlace está en hover */
+}
+
+header {
+    background: linear-gradient(90deg, #6a0dad, #1e1e1e);
+    padding: 50px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+header button {
+    background-color: #fff;
+    color: #1e1e1e;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header button:hover {
+    background-color: #6a0dad;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-tech {
+    background: linear-gradient(135deg, #2a2a2a, #1e1e1e);
+    padding: 40px 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease;
+}
+
+.section-tech:hover {
+    transform: translateY(-15px);
+}
+
+.section-content {
+    z-index: 1;
+    position: relative;
+}
+
+.section-tech h2 {
+    color: #6a0dad; /* Título con color morado */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.section-tech h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.section-tech p, .section-tech ul {
+    font-size: 1.1rem;
+    color: #ddd;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.section-tech ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.section-tech ul li {
+    margin-bottom: 10px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #6a0dad;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-link:hover {
+    background-color: #fff;
+    color: #6a0dad;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Modo Oscuro */
+.dark-mode {
+    background-color: #121212;
+    color: #fff;
+}
+
+.dark-mode header {
+    background: linear-gradient(90deg, #000, #1e1e1e);
+}
+
+.dark-mode .section-tech {
+    background: linear-gradient(135deg, #000, #121212);
+}
+
+.dark-mode nav {
+    background-color: #000;
+}
+
+.dark-mode footer {
+    background-color: #000;
+}
+
+.dark-mode header button {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Contadores */
+#metrics .metric {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+#metrics .metric h3 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+#metrics .metric p {
+    font-size: 3rem;
+    color: #6a0dad;
+}
+
+/* Estilo del formulario */
+#feedback {
+    background: #2a2a2a;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+#feedback label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+#feedback input, #feedback select, #feedback textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#feedback button {
+    background-color: #6a0dad;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#feedback button:hover {
+    background-color: #fff;
+    color: #6a0dad;
+}
+
+#formMessage {
+    color: #6a0dad;
+    font-weight: bold;
+    margin-top: 20px;
+}
